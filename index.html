@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoInk - The Dark Factory Blog Team</title>
+    <meta name="description" content="EchoInk is a Dark Factory SaaS offering ghostwritten blogs in your personal style. Our AI BLOG TEAM works through the night to research, outline, tone-match, and write perfect 900-1,200 word blogs.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glow-blob"></div>
+    <div class="glow-blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Echo<span class="highlight">Ink</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how-it-works">The Dark Factory</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact" class="cta-btn">Start the Engine</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">Welcome to the Dark Factory</div>
+            <h1>Your Ghostwriter,<br> <span class="gradient-text">Working While You Sleep.</span></h1>
+            <p>You turn off the lights, we start the engine. EchoInk provides 900-1,200 word blogs perfectly tone-matched to your personal style. Handled by THE BLOG TEAM.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Submit Request</a>
+                <a href="#how-it-works" class="btn secondary">See How It Works</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card">
+                <div class="factory-status">
+                    <span class="status-dot"></span>
+                    <span>System Active: THE BLOG TEAM</span>
+                </div>
+                <div class="code-block">
+                    <div class="line"><span class="keyword">function</span> <span class="func">startNightShift</span>() {</div>
+                    <div class="line">  <span class="comment">// Lights out. We take over.</span></div>
+                    <div class="line">  <span class="keyword">await</span> researchTopic();</div>
+                    <div class="line">  <span class="keyword">await</span> buildOutline();</div>
+                    <div class="line">  <span class="keyword">await</span> matchUserTone();</div>
+                    <div class="line">  <span class="keyword">return</span> generateBlog({</div>
+                    <div class="line">    <span class="prop">words</span>: <span class="string">"900-1200"</span>,</div>
+                    <div class="line">    <span class="prop">style</span>: <span class="string">"perfect"</span></div>
+                    <div class="line">  });</div>
+                    <div class="line">}</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="dark-factory">
+        <div class="section-header">
+            <h2>The Dark Factory <span class="highlight">Methodology</span></h2>
+            <p>At night, the real work begins. Turn off the internal lights; our systems never stop.</p>
+        </div>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3>Research</h3>
+                <p>Deep-dive data collection across the web to gather factual, relevant, and compelling information on your topic.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3>Outline</h3>
+                <p>Structuring the narrative. We build a logical flow that keeps readers engaged from the hook to the conclusion.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3>Tone-Match</h3>
+                <p>Analyzing your personal writing style. We mimic your vocabulary, cadence, and unique voice.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">04</div>
+                <h3>Draft</h3>
+                <p>Writing a comprehensive 900-1,200 word blog with integrated references, ready for your review by morning.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Ready to start the <span class="gradient-text">Engine</span>?</h2>
+            <p>Submit your request and let THE BLOG TEAM take over.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Request submitted! THE BLOG TEAM is activating.');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell us about your topic..." rows="4" required></textarea>
+                <button type="submit" class="btn primary submit-btn">Initialize Night Shift</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EchoInk Dark Factory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

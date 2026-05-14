@@ -1,0 +1,21 @@
+[project]
+name = "blog_team"
+version = "0.1.0"
+description = "A blog writing team powered by CrewAI"
+authors = [{ name = "Derrick-John Piper" }]
+dependencies = [
+    "crewai",
+    "crewai-tools",
+    "python-dotenv"
+]
+
+[project.scripts]
+blog_team = "blog_team.main:run"
+run_crew = "blog_team.main:run"
+train = "blog_team.main:train"
+replay = "blog_team.main:replay"
+test = "blog_team.main:test"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
