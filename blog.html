@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoInk - Blots Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Brighter colors for the blog */
+            --bg-base: #fdfaf6;
+            --bg-surface: #f5eee6;
+            --bg-card: #ffffff;
+            --text-primary: #133a52; /* Navy */
+            --text-secondary: #5c6b73;
+            --border-color: rgba(199, 139, 113, 0.2);
+            --accent-glow: #c78b71;
+        }
+        
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+        }
+
+        .navbar {
+            background: rgba(253, 250, 246, 0.9);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .btn.primary {
+            background: var(--accent-copper);
+            color: white;
+            box-shadow: 0 4px 15px rgba(199, 139, 113, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .btn.primary:hover {
+            background: #b57a60;
+            box-shadow: 0 6px 20px rgba(199, 139, 113, 0.5);
+        }
+        
+        .step-card {
+            background: var(--bg-card);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .step-card:hover {
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(199, 139, 113, 0.15);
+        }
+        
+        .step-card::before {
+            background: linear-gradient(90deg, transparent, var(--accent-navy), transparent);
+        }
+
+        .step-card h3 {
+            color: var(--accent-navy);
+        }
+        
+        .contact-form {
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: #fdfaf6;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent-navy);
+        }
+
+        .glow-blob {
+            background: radial-gradient(circle, rgba(199, 139, 113, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+        }
+        
+        .glow-blob.blob-2 {
+            background: radial-gradient(circle, rgba(19, 58, 82, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+        }
+        
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--accent-copper);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .dark-factory {
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glow-blob"></div>
+    <div class="glow-blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Echo<span class="highlight">Ink</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blots Blog</a></li>
+            <li><a href="ecommerce.html" class="cta-btn">Buy Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="min-height: 35vh; padding-bottom: 1rem;">
+        <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <div class="badge" style="border-color: var(--accent-copper); color: var(--accent-copper); background: rgba(199, 139, 113, 0.1);">EchoInk Publications</div>
+            <h1>Blots <span class="gradient-text">Blog</span></h1>
+            <p>Insights, stories, and deep dives from the Dark Factory.</p>
+        </div>
+    </header>
+
+    <section class="dark-factory" style="padding-top: 2rem; padding-bottom: 4rem;">
+        <div class="steps-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="step-card">
+                <div class="blog-meta">Oct 24, 2026 • by The Blog Team</div>
+                <h3>The Future of Automated Ghostwriting</h3>
+                <p>How AI is shifting the paradigm of personal branding and scalable content creation in the modern era.</p>
+                <div style="margin-top: 1.5rem;"><a href="#" class="btn secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a></div>
+            </div>
+            <div class="step-card">
+                <div class="blog-meta">Oct 20, 2026 • by Admin</div>
+                <h3>Mastering the Tone-Match</h3>
+                <p>A behind-the-scenes look at how the Dark Factory captures your unique cadence and vocabulary.</p>
+                <div style="margin-top: 1.5rem;"><a href="#" class="btn secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a></div>
+            </div>
+            <div class="step-card">
+                <div class="blog-meta">Oct 15, 2026 • by Guest Author</div>
+                <h3>Scaling Your Agency with AI</h3>
+                <p>Why modern agencies are turning to automated pipelines to fulfill their clients' content needs.</p>
+                <div style="margin-top: 1.5rem;"><a href="#" class="btn secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit a blog form -->
+    <section class="dark-factory" style="padding-top: 4rem; padding-bottom: 8rem; background: var(--bg-surface);">
+        <div class="section-header">
+            <h2 style="color: var(--text-primary);">Submit a <span class="highlight">Blog</span></h2>
+            <p>Have an insight? Submit your draft to the admin queue for approval.</p>
+        </div>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Blog submitted to admin queue for approval!');">
+                <input type="text" placeholder="Blog Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <textarea placeholder="Write your blog content or summary here..." rows="8" required></textarea>
+                <button type="submit" class="btn primary submit-btn">Submit to Queue</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
