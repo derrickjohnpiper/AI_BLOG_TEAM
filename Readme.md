@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- LOGO -->
-<img src="Logo_Asests/Logo_EchoInk_Blots/Banner-Trans-PenInk.png" alt="EchoInk Logo" width="300"/>
+<img src="Banner-Trans-PenInk.png" alt="EchoInk Logo" width="300"/>
 
 # 🖊️ EchoInk — The Blog Team
 
